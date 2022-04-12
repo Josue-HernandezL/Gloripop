@@ -21,6 +21,7 @@
     --bg-body: #F6F7F7;
     --letra-name: 'Sigmar One', cursive;
     --color-text: black;
+    --color-img: #F3F6F4;
 }
 
 /* NAVEGACIÓN */
@@ -31,6 +32,7 @@ nav {
     height: 60px;
     width: 100%;
     background-color: var(--bg-nav);
+    z-index: 1;
 }
 
 .name , .inicio , .contacto {
@@ -86,12 +88,69 @@ body {
     height: 85vh;
     width: 90%;
     background-color: var(--bg-section);
-    border-radius: 0 0 10px 10px;
-    z-index: -1;
-    box-shadow: 2px -4px 39px 16px rgba(0,0,0,0.32);
-    -webkit-box-shadow: 2px -4px 39px 16px rgba(0,0,0,0.32);
-    -moz-box-shadow: 2px -4px 39px 16px rgba(0,0,0,0.32);
+    border-radius: 0px 0 10px 10px;
+    -webkit-box-shadow: 0px 5px 12px 3px rgb(130 125 130 / 49%);
+    -moz-box-shadow: 0px 5px 12px 3px rgba(130,125,130,0.49);
+    box-shadow: 0px 5px 12px 3px rgb(130 125 130 / 49%);
 }
+
+/* CONTENEDORES */
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 90%;
+    background-color: var(--bg-container);
+    margin: 35px 65px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 12px 3px rgb(130 125 130 / 49%);
+    -moz-box-shadow: 0px 5px 12px 3px rgba(130,125,130,0.49);
+    box-shadow: 0px 5px 12px 3px rgb(130 125 130 / 49%);
+    background-color: var(--bg-container);
+}
+.box-2 {
+    height: 40%;
+    width: 90%;
+    background-color: var(--bg-container);
+    margin: 50px 65px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 12px 3px rgb(130 125 130 / 49%);
+    -moz-box-shadow: 0px 5px 12px 3px rgba(130,125,130,0.49);
+    box-shadow: 0px 5px 12px 3px rgb(130 125 130 / 49%);
+    background-color: var(--bg-container);
+}
+
+/* IMAGENES CONTENT 1 */
+
+.box img {
+    height: 170px;
+    width: 170px;
+    background-color: var(--color-img);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.box-1 h2 {
+    text-align: center;
+    font-family: var(--letra-name);
+    text-transform: uppercase;
+}
+
+.img-div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.box img:hover {
+    border-radius: 5px;
+    -webkit-box-shadow: -3px 2px 31px -6px rgba(0,0,0,0.76);
+    -moz-box-shadow: -3px 2px 31px -6px rgba(0,0,0,0.76);
+    box-shadow: -3px 2px 31px -6px rgba(0,0,0,0.76);
+    transition: .6s;
+}
+
 
 /* FOOTER */
 
