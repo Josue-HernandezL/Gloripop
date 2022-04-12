@@ -1,0 +1,108 @@
+/* GLOBALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+
+:root {
+    --bg-nav: #B2B2FF;
+    --bg-section: #EFE9FA;
+    --bg-container: #CBE7E7;
+    --bg-body: #F6F7F7;
+    --letra-name: 'Sigmar One', cursive;
+    --color-text: black;
+}
+
+/* NAVEGACIÓN */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: var(--bg-nav);
+}
+
+.name , .inicio , .contacto {
+    font-family: var(--letra-name);
+    color: var(--color-text);
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.name:hover {
+    color: white;
+}
+.inicio:hover {
+    color: white;
+    background-color: #B2B2FF;
+    
+}
+.contacto:hover {
+    color: white;
+    background-color: #B2B2FF;
+    
+} 
+
+.name {
+    margin-left: 75px;
+}
+.inicio {
+margin-left: 750px;
+}
+.contacto {
+    margin-left: 190px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* SECCIÓN */
+
+body {
+    background-color: var(--bg-body);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+}
+
+.box {
+    height: 85vh;
+    width: 90%;
+    background-color: var(--bg-section);
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+    box-shadow: 2px -4px 39px 16px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 2px -4px 39px 16px rgba(0,0,0,0.32);
+    -moz-box-shadow: 2px -4px 39px 16px rgba(0,0,0,0.32);
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-family: 'Scope One', serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+}
