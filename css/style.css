@@ -15,10 +15,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
 
 :root {
-    --bg-nav: #B2B2FF;
-    --bg-section: #EFE9FA;
-    --bg-container: #CBE7E7;
-    --bg-body: #F6F7F7;
+    --bg-nav: #FFD36E;
+    --bg-section: #FFF56D;
+    --bg-container: #99FFCD;
+    --bg-body: #eeffff;
     --letra-name: 'Sigmar One', cursive;
     --color-text: black;
     --color-img: #F3F6F4;
@@ -44,17 +44,14 @@ nav {
 }
 
 .name:hover {
-    color: white;
+    color: #ff7a2d;
 }
 .inicio:hover {
-    color: white;
-    background-color: #B2B2FF;
+    color: #ff7a2d;
     
 }
 .contacto:hover {
-    color: white;
-    background-color: #B2B2FF;
-    
+    color: #ff7a2d;
 } 
 
 .name {
@@ -257,17 +254,20 @@ nav {
     width: 100%;
 }
 
+
 .name {
+    font-size: 25px;
     margin-left: 25px;
 }
 
 .contacto {
-    margin-left: 50px;
+    font-size: 25px;
+    margin-left: 30px;
 }
 
 .box img {
-    height: 300px;
-    width: 300px;
+    height: 240px;
+    width: 240px;
     margin: 0 0 25px 0;
     padding: 10px;
 }
@@ -281,6 +281,7 @@ nav {
     flex-direction: column;
     height: auto;
     width: auto;
+    padding: auto;
 }
 .box-1, .box-2 {
     height: auto;
